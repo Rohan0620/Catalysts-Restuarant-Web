@@ -6,6 +6,16 @@ import crypto from "crypto";
 
 
 
+export const userDetails=bigPromise(async(req,res)=>{
+    const details=await User.find();
+    console.log(details);
+    return res.status(201);
+    
+
+    
+    
+
+})
 export const createUser = bigPromise(async(req,res,next)=>
 {
     const {user_name , email , phoneNumber ,password} = req.body;

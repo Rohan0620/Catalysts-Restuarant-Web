@@ -1,7 +1,7 @@
-import mongoose from "mongoose";
-import bcrypt from "bcryptjs";
-import jwt from "jsonwebtoken";
-import crypto from "crypto";
+const mongoose=require("mongoose")
+// import bcrypt from "bcryptjs";
+// import jwt from "jsonwebtoken";
+// import crypto from "crypto";
 
 const menuSchema = new mongoose.Schema({
   dish_name: {
@@ -29,4 +29,4 @@ const menuSchema = new mongoose.Schema({
 });
 
 const Menu = mongoose.model("Menu", menuSchema);
-export default Menu;
+module.exports=Menu;

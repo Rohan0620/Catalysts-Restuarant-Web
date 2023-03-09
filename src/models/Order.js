@@ -1,7 +1,7 @@
-import mongoose from "mongoose";
-import crypto from "crypto";
-import bcrypt from "bcryptjs";
-import jwt from "jsonwebtoken";
+const mongoose=require("mongoose")
+// import crypto from "crypto";
+// import bcrypt from "bcryptjs";
+// import jwt from "jsonwebtoken";
 
 const orderSchema = new mongoose.Schema({
   menuId: {
@@ -16,4 +16,4 @@ const orderSchema = new mongoose.Schema({
 });
 
 const Order = mongoose.model("Order", orderSchema);
-export default Menu;
+module.exports=Order;
